@@ -1,0 +1,40 @@
+baseURL: 
+  'https://vinhpx.id.vn/'
+languageCode: 
+  'en-us'
+title: 
+  'Vinh’s Blog'
+theme: PaperMod
+
+params:
+
+    homeInfoParams:
+      Title: "Hi, I’m Vinh \U0001F44B"
+      Content: I'm an AI Engineer
+
+    socialIcons:
+    - name: github
+      url: https://github.com/xuanvinh1997
+    - name: linkedin
+      url: https://www.linkedin.com/in/vinh-pham-84b272235/
+
+menu:
+    main:
+    - identifier: home
+      name: Home
+      url: /
+      weight: 10
+    - identifier: posts
+      name: Blog
+      url: /posts/
+      weight: 20
+    - identifier: contents
+      name: Contributions
+      url: /contribs/
+      weight: 30
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # necessary for search
